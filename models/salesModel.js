@@ -55,25 +55,3 @@ module.exports = {
   deleteSale,
   deleteSaleToUpdate,
 };
-
-// async function createSaleProduct({ saleId, productId, quantity }) {
-//   await connection.execute(
-//     'INSERT INTO StoreManager.sales_products (sale_id, product_id, quantity) VALUES (?, ?, ?)',
-//     [saleId, productId, quantity],
-//   );
-// }
-
-// async function createSale(saleItens) {
-//   const query = 'INSERT INTO StoreManager.sales () VALUES ()';
-//   const [{ insertId: saleId }] = await connection.execute(query);
-
-//   await Promise.all(saleItens.map(async (saleItem) => {
-//     await createSaleProduct({ saleId, ...saleItem });
-//   }));
-
-//   return saleId;
-// }
-// module.exports = {
-//   createSale,
-//   createSaleProduct,
-// };

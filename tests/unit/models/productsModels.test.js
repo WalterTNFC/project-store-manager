@@ -67,22 +67,6 @@ describe('Testa a camada model de products', () => {
       });
 
     });
-
-    // describe('Verifica o retorno em caso de falha', () => {
-
-    //   before(async () => {
-    //     sinon.stub(connection, 'execute').resolves([[]]);
-    //   });
-
-    //   after(async () => connection.execute.restore());
-
-    //   it('Verifica se retorna undefined', async () => {
-    //     const response = await productsModel.getById(999);
-    //     expect(response).to.be.undefined;
-    //   });
-
-    // });
-
   });
 
   describe('Testa a criação de um produto', () => {
@@ -118,21 +102,6 @@ describe('Testa a camada model de products', () => {
       expect(response).to.be.an('object');
     });
   });
-
-  // describe('Testa a exclusão de um produto', () => {
-
-  //   before(async () => {
-  //     sinon.stub(connection, 'execute').resolves();
-  //   });
-
-  //   after(async () => connection.execute.restore());
-
-  //   it('Verifica se a query é executada', async () => {
-  //     const response = await productsModel.deleteProduct(1);
-  //     expect(response).to.be.an('object');
-  //   });
-
-  // });
 
   describe('Testa a busca de produto por nome', () => {
 

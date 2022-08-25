@@ -51,12 +51,6 @@ async function updatesale(req, res) {
   return res.status(code).json(data);
 }
 
-// async function create(req, res) {
-//   const sale = await salesService.create(req.body);
-
-//   res.status(201).json(sale);
-// }
-
 module.exports = {
   getAll,
   getById,

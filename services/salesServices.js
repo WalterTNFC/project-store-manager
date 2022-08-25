@@ -74,20 +74,3 @@ module.exports = {
   deleteSale,
   updateSale,
 };
-
-// async function create(saleItens) {
-//   await Promise.all(saleItens.map(async ({ productId }) => {
-//     await productsService.getById({ id: productId });
-//   }));
-
-//   const id = await salesModel.createSale(saleItens);
-
-//   return {
-//     id,
-//     itemsSold: saleItens,
-//   };
-// }
-
-// module.exports = {
-//   create,
-// };
